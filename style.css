@@ -33,10 +33,6 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.hidden {
-  display: none;
-}
-
 /* COMPONENTS */
 button {
   width: 9.125rem;
@@ -150,6 +146,9 @@ h6 {
   justify-content: space-between;
   padding-top: 3.5rem;
   padding-bottom: 6.12rem;
+  transition-property: transform;
+  transition-duration: 0.7s;
+  transition-delay: 0s;
 }
 
 header {
@@ -193,6 +192,11 @@ header {
 .details {
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(20.387113571166992px);
+  height: auto;
+
+  transition-property: transform;
+  transition-duration: 0.7s;
+  transition-delay: 0s;
 }
 
 .details__wrapper {

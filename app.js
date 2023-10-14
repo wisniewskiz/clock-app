@@ -104,33 +104,37 @@ const headerWrapper = document.querySelector(".header__wrapper");
 const quoteWrapper = document.getElementById("quote__wrapper");
 
 const changeToActive = () => {
-  buttonInfoText.innerText = "less";
-  buttonInfo.className = "acive";
-  detailsContent.classList.toggle("hidden");
   buttonIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#303030"/>
   <path d="M14 23L20 17L26 23" stroke="white" stroke-width="2"/>
 </svg>`;
-headerWrapper.style = "height: auto;";
-quoteWrapper.classList.toggle("hidden");
+
+  buttonInfoText.innerText = "less";
+  buttonInfo.className = "acive";
+
+  headerWrapper.style = "transform: translateY(-25rem)";
+detailsContent.style = "transform: translateY(-25rem)";
 };
 
 const changeToInactive = () => {
-  buttonInfoText.innerText = "more";
-  buttonInfo.className = "inactive";
-  detailsContent.classList.toggle("hidden");
   buttonIcon.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#303030"/>
   <path d="M14 17L20 23L26 17" stroke="white" stroke-width="2"/>
   </svg>`;
-  quoteWrapper.classList.toggle("hidden");
-  headerWrapper.style = "height: 100vh;";
+  
+  buttonInfoText.innerText = "more";
+  buttonInfo.className = "inactive";
+  headerWrapper.style = "transform: translateY(0)";
+  detailsContent.style = "transform: translateY(0)";
+
+  // detailsContent.style = "height: 0px";
+  // headerWrapper.style = "height: 100vh;";
+  // quoteWrapper.style = "height: auto";
 };
 
 const changeDetails = () => {
   if (
-    buttonInfo.classList.contains("inactive") &&
-    detailsContent.classList.contains("hidden")
+    buttonInfo.classList.contains("inactive")
   ) {
     changeToActive();
   } else {
