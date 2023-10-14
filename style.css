@@ -34,7 +34,7 @@ body {
 }
 
 .hidden {
-  height: 0px;
+  display: none;
 }
 
 /* COMPONENTS */
