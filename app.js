@@ -105,25 +105,25 @@ const quoteWrapper = document.getElementById("quote__wrapper");
 
 const changeToActive = () => {
   buttonInfoText.innerText = "less";
-  buttonInfo.className = "acive";
-  detailsContent.classList.toggle("hidden");
+  buttonInfo.className = "active";
+  detailsContent.style = "height: auto;";
   buttonIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#303030"/>
   <path d="M14 23L20 17L26 23" stroke="white" stroke-width="2"/>
 </svg>`;
 headerWrapper.style = "height: auto;";
-quoteWrapper.classList.toggle("hidden");
+quoteWrapper.style = "height: 0vh";
 };
 
 const changeToInactive = () => {
   buttonInfoText.innerText = "more";
   buttonInfo.className = "inactive";
-  detailsContent.classList.toggle("hidden");
+  detailsContent.style = "height: 0px";
   buttonIcon.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#303030"/>
   <path d="M14 17L20 23L26 17" stroke="white" stroke-width="2"/>
   </svg>`;
-  quoteWrapper.classList.toggle("hidden");
+  quoteWrapper.style = "height: auto";
   headerWrapper.style = "height: 100vh;";
 };
 
