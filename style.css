@@ -1,0 +1,224 @@
+:root {
+  --color-darkest: #000000;
+  --color-dark: #303030;
+  --color-light: #ffffff;
+
+  --font-family: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem; /* 155.556% */
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+}
+
+.background__overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hidden {
+  display: none;
+}
+
+/* COMPONENTS */
+button {
+  width: 9.125rem;
+  height: 3.5rem;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 0.81rem;
+  border-radius: 1.75rem;
+  outline: none;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem; /* 175% */
+  letter-spacing: 0.3125rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button--icon {
+    width: 2.5rem;
+height: 2.5rem;
+flex-shrink: 0;
+}
+
+/* TYPOGRPAHY */
+h1 {
+  font-family: var(--font-family);
+  font-size: 12.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12.5rem; /* 100% */
+  letter-spacing: -0.3125rem;
+}
+h2 {
+  font-family: var(--font-family);
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+h3 {
+  font-family: var(--font-family);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem; /* 116.667% */
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+h4 {
+  font-family: var(--font-family);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem; /* 116.667% */
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+h5 {
+  font-family: var(--font-family);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem; /* 155.556% */
+}
+h6 {
+  font-family: var(--font-family);
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem; /* 186.667% */
+  letter-spacing: 0.1875rem;
+  text-transform: uppercase;
+}
+
+.main__heading--body {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem; /* 140% */
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+
+.main__body--zone {
+  font-family: var(--font-family);
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75rem; /* 70% */
+  text-transform: uppercase;
+}
+
+.header__wrapper {
+  color: var(--color-light);
+}
+
+/* LAYOUT */
+
+.header__wrapper {
+  margin: 0 auto;
+  max-width: 1110px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  padding-top: 3.5rem;
+  padding-bottom: 6.12rem;
+}
+
+header {
+  width: 35.8125rem;
+  flex-shrink: 0;
+}
+
+.quote__body {
+  display: flex;
+}
+
+#quote__refresh {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.main__heading {
+  display: flex;
+  height: 1.75rem;
+  padding-right: 0px;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.main__body {
+  display: flex;
+  align-items: baseline;
+}
+
+.main__footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* DETAILS */
+.details {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20.387113571166992px);
+}
+
+.details__wrapper {
+  margin: 0 auto;
+  max-width: 1110px;
+  display: flex;
+  justify-content: center;
+}
+
+.details__card--container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 9.25rem;
+  padding: 4.62rem 0;
+}
+
+.details__wrapper:nth-child(2) {
+  padding-left: 5.87rem;
+}
+.details__card {
+  display: inline-flex;
+  padding-right: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5625rem;
+  color: var(--color-dark);
+  margin-bottom: 2.63rem;
+}
