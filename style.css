@@ -99,6 +99,15 @@ font-size: clamp(0.75rem, 0.6619718309859155rem + 0.3755868544600939vw, 1rem);
   flex-shrink: 0;
 }
 
+.button--icon > svg > circle {
+  fill:#303030;
+}
+
+button:hover, button:hover>.button--icon>svg>circle {
+  color: #999999;
+  fill: #999999;
+}
+
 /* TYPOGRPAHY */
 h1 {
   font-family: var(--font-family);
