@@ -1,8 +1,10 @@
 // LOADING SCREEN
-// window.addEventListener("DOMContentLoaded", () => {
-//   const loader = document.querySelector(".loader");
-//   loader.classList.add("loader-hidden");
-// })
+window.addEventListener("DOMContentLoaded", () => {
+  const loader = document.querySelector(".loader");
+  loader.addEventListener("transitioned", () => {
+    document.body.removeChild("loader");
+  });
+});
 
 // GLOBAL VARIABLES
 let lat;
