@@ -104,7 +104,8 @@ const getTime = async () => {
 
   let timeRegion = Intl.DateTimeFormat().resolvedOptions().timeZone;
   timezoneText.innerText = timeRegion;
-  const res = await fetch(`http://worldtimeapi.org/api/timezone/${timeRegion}`);
+  console.log(timeRegion);
+  const res = await fetch(`https://worldtimeapi.org/api/timezone/${timeRegion}`);
   const data = await res.json();
   zoneAbrText.innerText = data.abbreviation;
   dayYearText.innerText = data.day_of_year;
